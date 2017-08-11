@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IngDemo</string>
+    <string name="alert_dialog_err_title">Error</string>
+    <string name="pos_btn">OK</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="balance">Balance</string>
+    <string name="remark">Remark</string>
+    <string name="footer_btn">Footer</string>
+    <string name="dummyTextRemark">This is a remark</string>
+</resources>
