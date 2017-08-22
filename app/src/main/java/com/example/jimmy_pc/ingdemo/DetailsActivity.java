@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
+import com.example.imgloader.ImgLoader;
 
 import org.w3c.dom.Text;
 
@@ -64,7 +63,8 @@ public class DetailsActivity extends AppCompatActivity {
             email = intent.getStringExtra("email");
             balance = intent.getStringExtra("balance");
             image = intent.getStringExtra("image");
-            Glide.with(DetailsActivity.this).load(image).into(imageView);
+//            Glide.with(DetailsActivity.this).load(image).into(imageView);
+            ImgLoader.getInstance().loadImage(DetailsActivity.this,imageView,image);
             nameLabel.setText(name);
             emailLabel.setText(email);
             balanceLabel.setText(balance);
